@@ -1,0 +1,57 @@
+//
+// Prefix header for all source files of the 'BoitePizza' target in the 'BoitePizza' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+	#import <Foundation/Foundation.h>
+	#import "BAPParentViewController.h"
+	#import "Utiles.h"
+    #import "AppDelegate_iPhone.h"
+    #import "BAPMethode.h"
+#endif
+
+
+//Constants
+#define kSecret                @"1f1e94fbe6ac049d93598a5ea391897b2f138602"
+#define kMoyenne               @"1"
+#define kMoyenne2              @"2"
+#define kGeante                @"3"
+#define kFinissama             @"thin"
+#define kTraditionnelle        @"medium"
+#define catPizza               @"pizza"
+#define catFood                @"food"
+#define catAccomp              @"accompagnement"
+#define catMenu                @"menu"
+
+//Appmaker Methods
+#define	kWebServicesAppMaker	@"http://json.appmaker.fr/bap/iphone-v1-dev/"
+#define kInterstitiel			@"get-intersticiel"
+#define kCreationMethod			@"create-or-update-customer"
+#define kConnectionMethod		@"connexion"
+#define kGetStoreMethod			@"magasins"
+#define kGetStreetMethod		@"street"
+#define kLostPasswordMethod		@"lost-password"
+#define kSellAddMethod			@"sell-add"
+#define kGetCategoriesMethod	@"get-categories"
+#define kGetProductsMethod		@"get-produits"
+#define kGetMenusMethod			@"get-menus"
+#define kGetFoodCollectionMethod			@"get-foodcollection"
+#define kGetAccompagnementMethod			@"get-accompagnements"
+#define kComposeMenusMethod		@"compose-menus"
+#define kItemAddMethod			@"item-add"
+#define kListerPanierMethod		@"list-panier"
+#define kPushMethod             @"register-device"
+#define kCouponsMethod          @"coupons"
+#define kCouponApplicableMethod             @"coupons-relevant"
+#define kAppliquerCouponMethod  @"sell-coupons"
+
+
+//EPOTAM Methods
+#define kWebServicesEpotam		@"https://commandev.laboiteapizza.com/webservice/"
